@@ -22,7 +22,7 @@ eventEmitter.on('startRace',()=>{
                 records.table.push({Start:raceObj})
                 i++
             }
-        },20000/* 60000 */) //after every min 6 horse will store in DB
+        },60000) //after every min 6 horse will store in DB
     })
 
     //After every 5 min reauthenticate here
@@ -66,7 +66,7 @@ exports.login=(req,res)=>{
         },15000);
        breakSession= setInterval(()=>{
             sessionTimeOutAuth()
-        },120000/* 300000 */)
+        },300000)
 }
 
 //Real time data will fetch from here

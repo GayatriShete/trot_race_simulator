@@ -7,7 +7,7 @@ router.route('/result').get(authenticateToken,fetchResult)
 router.route('/storeWorker').post(createWorker)
 router.route('/auth').post(login)
 router.route('/finish').get(finishRace)
-router.route('/getWorker').post(fetchWorker)
+router.route('/getWorker').get(fetchWorker)
 
 
 module.exports=router;

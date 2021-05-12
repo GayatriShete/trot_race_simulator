@@ -11,7 +11,7 @@ The Login user data will store in MongoDB.
 After start race Every min 6 horse object will created and its stored in DB.
 Using this token user can see the result and finish this race.
 After Every 5 min token will be re-authenticate automatically. 
-Once Race is finish if want to start the race again then user have to give '/auth' api call i.e to login.
+Once Race is finished and  if you want to start the race again then user have to give '/auth' api call i.e login again.
 
 
 **Prerequisites-**
@@ -38,6 +38,7 @@ url- http://{hostname/IP}:3002/api/v1/auth
 body- {
 "email": "joe@example.com", "password": "xxxxxxx"
 }
+
 output-
 {msg:"" ,Token:""}
 

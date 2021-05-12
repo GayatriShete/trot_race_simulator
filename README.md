@@ -16,6 +16,7 @@ Once Race is finish if want to start the race again then user have to give '/aut
 
 **Prerequisites-**
 Nodejs, Postman
+Note- Atlas Cloud MongoDB used.
 
 NodeJS-to start the server of simulator
 Postman- to test/run the simulator
@@ -32,7 +33,7 @@ hit Api through postman.
 Example-**
 **1.For Login User and Get Token**
 Method- Post
-url- http://{hostname}:3002/api/v1/auth
+url- http://{hostname/IP}:3002/api/v1/auth
 body- {
 "email": "joe@example.com", "password": "xxxxxxx"
 }
@@ -41,21 +42,22 @@ output-
 
 **2.For getting real time Result**
 Method- Get
-url- http://{hostname}:3002/api/v1/result
+url- http://{hostname/IP}:3002/api/v1/result
 header- add authorization :"Bearer {Token}" //Token- which got after login
 
 **3.To finish the Race**
 Method- Get
-url- http://{hostname}:3002/api/v1/finish
+url- http://{hostname/IP}:3002/api/v1/finish
 header- add authorization :"Bearer {Token}" //Token- which got after login
 
 **4.To store the user in DB**
 Method- Post
-url- http://{hostname}:3002/api/v1/storeWorker
+url- http://{hostname/IP}:3002/api/v1/storeWorker
 body- {
 "email": "joe@example.com", "password": "xxxxxxx"
 }
 
 **5.To get user List**
 Method- Get
-url- http://{hostname}:3002/api/v1/getWorker
+url- http://{hostname/IP}:3002/api/v1/getWorker
+

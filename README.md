@@ -34,6 +34,7 @@ Example-**
 **1.For Login User and Get Token**
 Method- Post
 url- http://{hostname/IP}:3002/api/v1/auth
+
 body- {
 "email": "joe@example.com", "password": "xxxxxxx"
 }
@@ -43,16 +44,19 @@ output-
 **2.For getting real time Result**
 Method- Get
 url- http://{hostname/IP}:3002/api/v1/result
+
 header- add authorization :"Bearer {Token}" //Token- which got after login
 
 **3.To finish the Race**
 Method- Get
 url- http://{hostname/IP}:3002/api/v1/finish
+
 header- add authorization :"Bearer {Token}" //Token- which got after login
 
 **4.To store the user in DB**
 Method- Post
 url- http://{hostname/IP}:3002/api/v1/storeWorker
+
 body- {
 "email": "joe@example.com", "password": "xxxxxxx"
 }

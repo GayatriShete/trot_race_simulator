@@ -15,7 +15,7 @@ Once Race is finish if want to start the race again then user have to give '/aut
 
 
 **Prerequisites-**
-Nodejs, Postman
+Nodejs, Postman.
 Note- Atlas Cloud MongoDB used.
 
 NodeJS-to start the server of simulator
